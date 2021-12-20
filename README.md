@@ -1,4 +1,9 @@
 
+# Springboot-Dynamic-Datasource
+
+SpringBoot动态数据源，启动后。先通过`/api/datasource` 添加数据源（数据源需要先创建，并且初始数据表），也可以删除添加的数据源。
+
+然后可以通过 `/api/user` 接口进行测试。
 
 ## 数据表SQL
 
