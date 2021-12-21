@@ -1,7 +1,7 @@
 
 # Springboot-Dynamic-Datasource
 
-SpringBoot动态数据源，启动后。先通过`/api/datasource` 添加数据源（数据源需要先创建，并且初始数据表），也可以删除添加的数据源。
+SpringBoot动态数据源，启动后。先通过`/api/datasource` 添加数据源（数据库需要先创建，并且初始数据表），也可以删除添加的数据库。
 
 然后可以通过 `/api/user` 接口进行测试。
 
@@ -20,3 +20,8 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='用户';
 ```
 
+## 讨论
+
+如果有问题，可以在此帖参与讨论
+
+[https://springboot.io/t/topic/4660](https://springboot.io/t/topic/4660)

@@ -43,6 +43,10 @@ public class DynamicDataSource extends AbstractRoutingDataSource implements Disp
 		return dataSources;
 	}
 
+	/**
+	 * 复写父类的afterPropertiesSet，空实现。
+	 * 父类会进行非空校验，会导致异常
+	 */
 	@Override
 	public void afterPropertiesSet() {
 	}

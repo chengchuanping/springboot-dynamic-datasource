@@ -1,12 +1,13 @@
 package io.springboot.demo.configuration;
 
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import io.springboot.demo.interceptor.DataSourceInterceptor;
 
-@Component
+@Configuration
 public class WebMvcConfiguration implements WebMvcConfigurer {
 	
 	@Override
@@ -16,6 +17,7 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
 			;
 	}
 	
+	@Bean
 	public DataSourceInterceptor dataSourceInterceptor () {
 		return new DataSourceInterceptor();
 	}
